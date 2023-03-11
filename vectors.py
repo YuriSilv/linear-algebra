@@ -32,6 +32,8 @@ def linear_combination(v:List[vector], c:list) -> vector:
 
     return result
 
+def dot_vec(x:vector, y:vector) -> float:
+    return [x[1]*x[3] - x[2]*y[1], x[2]*y[0] - x[0]*y[2], x[0]*y[1] - x[1]*y[0]]
 
 v1 = [1,2,3]
 v2 = [1,1,1]
